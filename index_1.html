@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #219ebc;
+        }
+
+        .heading{
+            color: #fb8500;
+            border-bottom: 2px solid seagreen;
+            text-align: center;
+            background-color: #8ecae6;
+        }
+
+        .navigation{
+            list-style:none;
+            text-align:center;
+            ;
+        }
+        .navigation__item{
+            display: inline;
+            margin-right: 20px
+        }
+        
+        .navigation__item a{
+            text-decoration: none;
+            color:#ff006e;
+            transition: all 0.3s ease-in-out;
+        }
+        .navigation__item a:hover{
+            /* border-bottom: solid 2px  #780000; */
+            color: #d6ccc2;
+        }
+        /* .navigation__item a:visited{
+            color:#7209b7
+        } */
+        .navigation__item a:selection{
+            color: black;
+        }
+        /* .navigation__item:last-child{
+            background-color: orange;
+        } */
+
+        .navigation__item:nth-child(2n){
+            background-color: brown;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .navigation__item:nth-child(2n+1){
+            background-color: rgb(13, 108, 163);
+            padding: 10px;
+            border-radius: 10px
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">
+        CSS таблица стилей
+    </h1>
+    <ul class="navigation">
+        <li class="navigation__item">
+            <a href="#">Главный</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">О нас</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Контакты</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Таблица Стилей</a>
+        </li>
+    </ul>
+</body>
+</html>
